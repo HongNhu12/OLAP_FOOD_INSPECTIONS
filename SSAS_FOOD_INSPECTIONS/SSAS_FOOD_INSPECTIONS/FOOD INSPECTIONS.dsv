@@ -1,0 +1,271 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9eb30015-e596-462b-a06b-edd3a3b53e1f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>FOOD INSPECTIONS</ID>
+  <Name>FOOD INSPECTIONS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>FOOD INSPECTIONS</DataSourceID>
+  <Schema>
+    <xs:schema id="FOOD_x0020_INSPECTIONS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="FOOD_x0020_INSPECTIONS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="dc6eb320-33cc-4ccb-8a63-8a11d06c2c8e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FACT" msprop:design-time-name="40a5ccb8-7676-49e3-a1a3-b2336a2b1af2" msprop:DbTableName="FACT" msprop:FriendlyName="FACT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Inspection_ID" msprop:design-time-name="0201bd7d-a8e5-471d-b78c-b2440b4a4004" msprop:DbColumnName="Inspection_ID" msprop:FriendlyName="Inspection_ID" type="xs:int" />
+                  <xs:element name="Risk" msprop:design-time-name="d1bbe10a-a921-4756-b771-19c283b74127" msprop:DbColumnName="Risk" msprop:FriendlyName="Risk" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Inspection_Date" msprop:design-time-name="d8b1987d-3a5d-4f0f-8d0d-3e99167b6dae" msprop:DbColumnName="Inspection_Date" msprop:FriendlyName="Inspection_Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Inspection_Type" msprop:design-time-name="422548c7-f083-4894-9c6e-985af9a4d2c7" msprop:DbColumnName="Inspection_Type" msprop:FriendlyName="Inspection_Type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Results" msprop:design-time-name="80e3bde2-630b-473c-ad71-94a7ceb09fb9" msprop:DbColumnName="Results" msprop:FriendlyName="Results" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DBA_Name_ID" msprop:design-time-name="ba542ec8-5c10-4f7f-9c8c-c76ea0749ee5" msprop:DbColumnName="DBA_Name_ID" msprop:FriendlyName="DBA_Name_ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_INSPECTION_TYPE" msprop:design-time-name="7060f92f-5821-4b7e-b198-7c5aacba07d0" msprop:DbTableName="DIM_INSPECTION_TYPE" msprop:FriendlyName="DIM_INSPECTION_TYPE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Inspection_Type" msprop:design-time-name="76598d58-4cf0-4846-947c-06b139e7f6f7" msprop:DbColumnName="Inspection_Type" msprop:FriendlyName="Inspection_Type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_INSPECTION_DATE" msprop:design-time-name="ebcb0407-1866-46d6-a5d7-c14f432c2671" msprop:DbTableName="DIM_INSPECTION_DATE" msprop:FriendlyName="DIM_INSPECTION_DATE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Inspection_Date" msprop:design-time-name="aabd8dc4-1218-491f-be71-0623ee36b6a1" msprop:DbColumnName="Inspection_Date" msprop:FriendlyName="Inspection_Date" type="xs:dateTime" />
+                  <xs:element name="Inspection_day" msprop:design-time-name="7802042b-584d-40dd-b051-2562203a3997" msprop:DbColumnName="Inspection_day" msprop:FriendlyName="Inspection_day" type="xs:int" minOccurs="0" />
+                  <xs:element name="Inspection_month" msprop:design-time-name="9f901da2-5068-4b25-a9b0-2f25d97e37f7" msprop:DbColumnName="Inspection_month" msprop:FriendlyName="Inspection_month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Inspection_year" msprop:design-time-name="b2a31d48-4960-44f8-bbd6-2db7e0daffb7" msprop:DbColumnName="Inspection_year" msprop:FriendlyName="Inspection_year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_RESULTS" msprop:design-time-name="3cd54f80-237b-400b-9b13-cdfeb07a1d41" msprop:DbTableName="DIM_RESULTS" msprop:FriendlyName="DIM_RESULTS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Results" msprop:design-time-name="65b034da-8a22-4410-bdac-6151d49c552e" msprop:DbColumnName="Results" msprop:FriendlyName="Results">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_RISK" msprop:design-time-name="502d8882-56d4-4449-88ef-f7cf97c4c6ad" msprop:DbTableName="DIM_RISK" msprop:FriendlyName="DIM_RISK" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Risk" msprop:design-time-name="3bbb80e7-6f1f-4c0f-b1c1-19337c5c80ed" msprop:DbColumnName="Risk" msprop:FriendlyName="Risk">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_DBA_NAME" msprop:design-time-name="d0399921-e626-45f7-8c14-5ad346106ba3" msprop:DbTableName="DIM_DBA_NAME" msprop:FriendlyName="DIM_DBA_NAME" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DBA_Name_ID" msprop:design-time-name="cfda91b7-f20a-4e86-bc9d-3cb80fba1e5a" msprop:DbColumnName="DBA_Name_ID" msprop:FriendlyName="DBA_Name_ID" type="xs:int" />
+                  <xs:element name="DBA_Name" msprop:design-time-name="459cd2a1-359a-4f5f-b51c-e1ca029e4cba" msprop:DbColumnName="DBA_Name" msprop:FriendlyName="DBA_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="License" msprop:design-time-name="3883413f-85ec-4536-88a7-e223538e62bd" msprop:DbColumnName="License" msprop:FriendlyName="License" type="xs:int" minOccurs="0" />
+                  <xs:element name="Facility_Type" msprop:design-time-name="e6294588-a522-4c3a-a5fa-e89b0bb193f8" msprop:DbColumnName="Facility_Type" msprop:FriendlyName="Facility_Type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ADDRESS_ID" msprop:design-time-name="9a78f42a-7d5d-4127-8f55-a768b544721d" msprop:DbColumnName="ADDRESS_ID" msprop:FriendlyName="ADDRESS_ID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_FACILITY_TYPE" msprop:design-time-name="19d91edc-8b7d-4057-a916-9fb60a450d96" msprop:DbTableName="DIM_FACILITY_TYPE" msprop:FriendlyName="DIM_FACILITY_TYPE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Facility_Type" msprop:design-time-name="0a6bde1c-3ddb-4064-9ecd-d922e6782686" msprop:DbColumnName="Facility_Type" msprop:FriendlyName="Facility_Type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_ADDRESS" msprop:design-time-name="ecf2b341-48ad-4743-b6bf-61824e8035ab" msprop:DbTableName="DIM_ADDRESS" msprop:FriendlyName="DIM_ADDRESS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ADDRESS_ID" msprop:design-time-name="fff789b1-7c3d-4e4a-b507-95ae140a939a" msprop:DbColumnName="ADDRESS_ID" msprop:FriendlyName="ADDRESS_ID" type="xs:int" />
+                  <xs:element name="Address" msprop:design-time-name="412212ca-d2d7-402c-aa51-8631fd1c6949" msprop:DbColumnName="Address" msprop:FriendlyName="Address" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="City" msprop:design-time-name="f61db47e-7f35-456e-804d-c96c005d0e32" msprop:DbColumnName="City" msprop:FriendlyName="City" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_CITY" msprop:design-time-name="b79c3dd3-1f8c-4124-9229-d04e0631a5fd" msprop:DbTableName="DIM_CITY" msprop:FriendlyName="DIM_CITY" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="City" msprop:design-time-name="9ba354bd-3a04-485a-9d97-c60200e03bba" msprop:DbColumnName="City" msprop:FriendlyName="City">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT" />
+          <xs:field xpath="Inspection_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_INSPECTION_TYPE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_INSPECTION_TYPE" />
+          <xs:field xpath="Inspection_Type" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_INSPECTION_DATE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_INSPECTION_DATE" />
+          <xs:field xpath="Inspection_Date" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_RESULTS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_RESULTS" />
+          <xs:field xpath="Results" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_RISK_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_RISK" />
+          <xs:field xpath="Risk" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_DBA_NAME_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DBA_NAME" />
+          <xs:field xpath="DBA_Name_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_FACILITY_TYPE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_FACILITY_TYPE" />
+          <xs:field xpath="Facility_Type" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_ADDRESS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_ADDRESS" />
+          <xs:field xpath="ADDRESS_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_CITY_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_CITY" />
+          <xs:field xpath="City" />
+        </xs:unique>
+        <xs:keyref name="FK__DIM_ADDRES__City__1BFD2C07" refer="dbo_DIM_CITY_Constraint1">
+          <xs:selector xpath=".//dbo_DIM_ADDRESS" />
+          <xs:field xpath="City" />
+        </xs:keyref>
+        <xs:keyref name="FK__DIM_DBA_N__ADDRE__22AA2996" refer="dbo_DIM_ADDRESS_Constraint1">
+          <xs:selector xpath=".//dbo_DIM_DBA_NAME" />
+          <xs:field xpath="ADDRESS_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__DIM_DBA_N__Facil__21B6055D" refer="dbo_DIM_FACILITY_TYPE_Constraint1">
+          <xs:selector xpath=".//dbo_DIM_DBA_NAME" />
+          <xs:field xpath="Facility_Type" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT__Results__300424B4" refer="dbo_DIM_RESULTS_Constraint1">
+          <xs:selector xpath=".//dbo_FACT" />
+          <xs:field xpath="Results" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT__DBA_Name_I__30F848ED" refer="dbo_DIM_DBA_NAME_Constraint1">
+          <xs:selector xpath=".//dbo_FACT" />
+          <xs:field xpath="DBA_Name_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT__Inspection__2E1BDC42" refer="dbo_DIM_INSPECTION_DATE_Constraint1">
+          <xs:selector xpath=".//dbo_FACT" />
+          <xs:field xpath="Inspection_Date" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT__Inspection__2F10007B" refer="dbo_DIM_INSPECTION_TYPE_Constraint1">
+          <xs:selector xpath=".//dbo_FACT" />
+          <xs:field xpath="Inspection_Type" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT__Risk__2D27B809" refer="dbo_DIM_RISK_Constraint1">
+          <xs:selector xpath=".//dbo_FACT" />
+          <xs:field xpath="Risk" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <FOOD_x0020_INSPECTIONS xmlns="" />
+  </Schema>
+</DataSourceView>
